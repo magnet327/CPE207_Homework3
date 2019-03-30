@@ -2483,6 +2483,12 @@ input, select, textarea {
 		position: relative;
 		overflow: hidden;
 	}
+	img.my-syle {
+		float: right;
+		height: 35px;
+		width: 35px;
+		padding-left: 10px;
+	  }
 
 		.image:before {
 			content: '';
@@ -2552,7 +2558,20 @@ input, select, textarea {
 		ul li {
 			padding-left: 0.5em;
 		}
-
+		ul.my-list-style {
+			list-style-type: none;
+			float: left;
+			line-height:36px;
+			padding: 8px 0;
+			font-size: 15px;
+			font-weight: 300;
+			text-align: left;
+			width: 300px;
+			margin-left:0;
+			padding-left:0;
+			border-bottom: 2px solid #eeeeee;
+			color: #67c100;
+		}	
 		ul.alt {
 			list-style: none;
 			padding-left: 0;
@@ -4074,3 +4093,5 @@ input, select, textarea {
 					}
 
 	}
+	
+	 

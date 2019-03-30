@@ -10,6 +10,11 @@
 	<title>Contact</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -46,55 +51,53 @@
 
 						<!-- Content -->
 						<section id="content">
-							<table width="80%" align="center">
-								<tbody align="center">
-									<tr>
-										<td>
-											<h3><label>Subject:</label></h3>
-										</td>
-										<td><input type="text" name="subject" value="" width="50px"> </td>
-									</tr>
-									<tr>
-										<td>
-											<h3> <label>Massage:</label></h3>
-										</td>
-										<td> <textarea name="msg"></textarea> </td>
-									</tr>
-									<tr>
-										<td>
-											<h3><label>Name:</label></h3>
-										</td>
-										<td><input type="text" name="fullname" value=""> </td>
-									</tr>
-									<tr>
-										<td>
-											<h3><label>Gender:</label></h3>
-										</td>
-										<td>
-											<input type="text" name="gender" value="">
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<h3><label>Phone:</label></h3>
-										</td>
-										<td><input type="text" name="phone" value=""> </td>
-									</tr>
-									<tr>
-										<td>
-											<h3><label>Email:</label></h3>
-										</td>
-										<td><input type="email" value=""></td>
-									</tr>
-									<tr>
-										<td></td>
-										<td><input type="submit" name="submit" value="submit"></td>
-									</tr>
-
-
-								</tbody>
-							</table>
-						</section>
+							<section class="container">
+								<form action="" id="my-form">
+									<h2>Add Your Contact</h2>
+									<div class="msg" style="color:red; padding: 10px ;margin: 10px; "  ></div>
+									<div>
+										<label for="subject">Subject:</label>
+										<input type="text" placeholder="Enter the subject..." name="" id="subject">
+									</div>
+									<div>
+										<label for="msg">Message:</label>
+										<textarea name="msg" id="msg"></textarea>
+									</div>
+									<div>
+										<label for="name">Name:</label>
+										<input type="text" placeholder="Enter your name..."name="" id="name">
+									</div>
+									<div>
+										<label for="email">Email:</label>
+										<input type="text" placeholder="example@example.com"name="" id="email">
+									</div>
+									<div>
+										<label for="gender">Gender:</label>
+										<input type="text" placeholder="Male or Female"name="" id="gender">
+									</div>
+									<div>
+										<label for="tel">Telephone:</label>
+										<input type="tel"  name="" id="tel" style="color:black">
+									</div>
+									<br>
+									<input type="submit" value="submit" class="btn">
+									<br>
+									
+								</form>
+								<ul id="user"></ul> 
+								<!-- <table class="table table-striped mt-5">
+										<thead>
+										  <tr>
+											<th>Name</th>
+											<th>Email</th>
+											<th>Tel</th>
+											<th></th>
+										  </tr>
+										</thead>
+								 9. add placeholder to insert list of book      -
+										<tbody id="contacts-list"></tbody>
+									  </table>   -->
+							</section>
 
 					</div>
 					<div class="col-4 col-12-medium">
@@ -159,7 +162,7 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
-
+	<script src="main.js"></script>
 </body>
 
 </html>
